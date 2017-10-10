@@ -10,8 +10,9 @@
         <nav class="mdl-navigation mdl-layout--large-screen-only">
           <router-link class="mdl-navigation__link" to="/" >Home</router-link>
           <router-link class="mdl-navigation__link" to="/about">About</router-link>
-          <a class="mdl-navigation__link" href="">Link</a>
+          <a class="mdl-navigation__link" href="">Perfil</a>
           <router-link class="mdl-navigation__link" to="/login">Ingresar</router-link>
+          <a class="mdl-navigation__link" href="">Salir</a>
           <router-view</router-view>
         </nav>
       </div>

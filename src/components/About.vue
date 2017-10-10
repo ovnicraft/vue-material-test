@@ -1,6 +1,6 @@
 <template>
   <div id="about" class="about">
-    <h1>About</h1>
+    <h1>Acerca de FleeApp</h1>
   </div>
 </template>
 
