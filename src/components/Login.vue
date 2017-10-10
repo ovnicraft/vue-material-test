@@ -1,5 +1,5 @@
 <template>
-  <main class="mdl-layout__content">
+  <div id="login" class="login mdl-layout__content">
     <div class="mdl-grid">
       <div class="mdl-cell mdl-cell--12-col">
         <h4>Login</h4>
@@ -34,12 +34,12 @@
         </form>
       </div>
     </div>
-  </main>
+  </div>
 
 </template>
 
 <script>
 export default {
-  name: 'login',
+  name: 'Login',
 };
 </script>

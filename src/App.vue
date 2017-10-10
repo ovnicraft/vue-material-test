@@ -8,10 +8,11 @@
         <div class="mdl-layout-spacer"></div>
         <!-- Navigation. We hide it in small screens. -->
         <nav class="mdl-navigation mdl-layout--large-screen-only">
-          <a class="mdl-navigation__link" href="">Link</a>
-          <a class="mdl-navigation__link" href="">Link</a>
+          <router-link class="mdl-navigation__link" to="/" >Home</router-link>
+          <router-link class="mdl-navigation__link" to="/about">About</router-link>
           <a class="mdl-navigation__link" href="">Link</a>
           <router-link class="mdl-navigation__link" to="/login">Ingresar</router-link>
+          <router-view</router-view>
         </nav>
       </div>
     </header>
