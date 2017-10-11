@@ -10,9 +10,9 @@
         <nav class="mdl-navigation mdl-layout--large-screen-only">
           <router-link class="mdl-navigation__link" to="/" >Home</router-link>
           <router-link class="mdl-navigation__link" to="/about">About</router-link>
-          <a class="mdl-navigation__link" href="">Perfil</a>
+          <a v-if="isAuth()" class="mdl-navigation__link" href="">Perfil</a>
           <router-link class="mdl-navigation__link" to="/login">Ingresar</router-link>
-          <a class="mdl-navigation__link" href="">Salir</a>
+          <a v-if="isAuth()" class="mdl-navigation__link" href="">Salir</a>
           <router-view</router-view>
         </nav>
       </div>
@@ -33,8 +33,18 @@
 </template>
 
 <script>
+import Auth from '@/auth';
+
 export default {
   name: 'app',
+  methods: {
+    logout() {
+      Auth.logout();
+    },
+    isAuth() {
+      return Auth.isAuthenticated();
+    },
+  },
 };
 </script>
 
